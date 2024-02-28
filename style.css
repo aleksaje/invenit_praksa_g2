@@ -1,28 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); /*Naslovi*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');/*tekst*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap'); /*Igrica*/
 
+:root{  
+--color-smaragad-ljubicasta:#54318C;
+--color-svijetlo-ljubicasta:#A486D5;
+--color-banana-žuta:#FFEB99; 
+--color-pijana-žuta:#FFDE5C; 
+--color-sunđer-žuta:#FFCC00; 
+}
 *{
     margin: 0px;
     
     box-sizing: border-box;
     font-family:"Rubik Mono One", ;
+    color: rgb(160, 171, 180);  
 }
-ul {
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--color-smaragad-ljubicasta);
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+nav {
+    display:flex;
+    align-items: center;
+    padding:5,10,10,7;
+    
+}
+nav > ul{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
     list-style-type: none;
+    justify-content: space-between ;
 }
+
 a{
     text-decoration: none;
 }
+
 .logo{
-    font-family: "VT323"    ;
+    height: 50px;
+    
 }
-.meni{
+.menitekst{
     font-family:"Chivo Mono" ;
+   
 }
-
-
-  
-
-  
- 
+.menu li{
+    margin-inline: 20px;    
+}
+.hero-card  {
+    max-width: 250px;
+    max-height: 300px;
+}
