@@ -1,63 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); /*Naslovi*/
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');/*tekst*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap'); /*Igrica*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+/*Naslovi*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+/*tekst*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=VT323&display=swap');
+/*Igrica*/
 
-:root{  
---color-smaragad-ljubicasta:#54318C;
---color-svijetlo-ljubicasta:#A486D5;
---color-banana-žuta:#FFEB99; 
---color-pijana-žuta:#FFDE5C; 
---color-sunđer-žuta:#FFCC00; 
+:root {
+    --color-smaragad-ljubicasta: #54318C;
+    --color-svijetlo-ljubicasta: #A486D5;
+    --color-banana-žuta: #FFEB99;
+    --color-pijana-žuta: #FFDE5C;
+    --color-sunđer-žuta: #FFCC00;
 }
-*{
+
+* {
     margin: 0px;
-    
+
     box-sizing: border-box;
-    font-family:"Rubik Mono One", ;
-    color: rgb(160, 171, 180);  
-}
-html{
-    scroll-behavior: smooth;
+    font-family: "Rubik Mono One", ;
+    color: rgb(160, 171, 180);
 }
 
-header{
+html {
+    scroll-behavior: smooth;
+    background: rgb(195,173,226);
+    background: linear-gradient(90deg, rgba(195,173,226,1) 0%, rgba(130,65,194,1) 100%);
+}
+
+header {
     background-color: var(--color-smaragad-ljubicasta);
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 99;
 }
+
 nav {
-    display:flex;
-    align-items: center;
-    padding:5,10,10,7;
-    
-}
-nav > ul{
     display: flex;
+    align-items:center;
+    padding: 5, 10, 10, 7;
+}
+
+nav>ul {
+    display: flex;
+   
     text-decoration: none;
     justify-content: space-around;
     list-style-type: none;
-    justify-content: space-between ;
 }
-
-a{
+nav ul li a::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: var(--color-sunđer-žuta);
+}
+nav ul li a:hover::after
+{
+   
+    width: 100%;
+}
+a {
     text-decoration: none;
 }
 
-.logo{
-    height: 50px;
-    
+.menitekst {
+    font-family: "Chivo Mono";
+
 }
-.menitekst{
-    font-family:"Chivo Mono" ;
+
+.menu li {
+    margin-inline: 50px;
+}
+
+.logo {
+    height: 50px;
+}
+.landing-page{
+    padding-top: 70px;
+    padding-left:32px;
+  
+}
+
+.koda img {
+    
+    max-width: 400px;
+    max-height: 450px;
+}
+
+.hero-card{
+    margin-left: 5%;
+    word-spacing:.4px;
+    max-width: fit-content;
+    font-size: 80px;
+    display: flex;
+    justify-content: left; 
    
 }
-.menu li{
-    margin-inline: 20px;    
+.Slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 25px;
+    font-family: "VT323";
+    font-size: 55px;
+   
+
 }
-.hero-card  {
-    max-width: 250px;
-    max-height: 300px;
+.Slogan h1 {
+    text-align: center;
+    color: #54318C;
+}
+.Slogan span{
+    color: #f8f6f2;
+}
+.Slogan p {
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 37px;
+    font-style: italic;
+    color: #FFCC00;
+    
+}
+.glavno {
+    background: rgb(195,173,226);
+    background: linear-gradient(90deg, rgba(195,173,226,1) 0%, rgba(130,65,194,1) 100%);
+    
+}
+.glavno h2{
+    font-size: 72px;
+    color: #f0f8ff;
+    font-family:"VT323";
+   text-align: center;
+    padding-top: 20px;
+}
+.glavno hr {
+    border: 10px solid var(--color-smaragad-ljubicasta);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+#osnovni-div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 500px;
+    border: 10px solid #f0f8ff ;
+    background-color: #f0f8ff;
+    border-radius: 40px;
+    
+  
 }
