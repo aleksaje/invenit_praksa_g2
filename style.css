@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: "Rubik Mono One", ;
     color: rgb(160, 171, 180);
+    
 }
 
 html {
@@ -35,7 +36,22 @@ header {
     right: 0;
     z-index: 99;
 }
-
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--color-sunđer-žuta);
+    border-radius: 5px;
+  }
 nav {
     display: flex;
     align-items:center;
@@ -44,15 +60,14 @@ nav {
 
 nav>ul {
     display: flex;
-   
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
 }
 nav ul li a::after{
     content: "";
     display: block;
-    height: 4px;
+    height: 2px;
     width: 0;
     background-color: var(--color-sunđer-žuta);
 }
@@ -66,6 +81,7 @@ a {
 }
 
 .menitekst {
+    font-size: 22px;
     font-family: "Chivo Mono";
 
 }
@@ -76,6 +92,7 @@ a {
 
 .logo {
     height: 50px;
+    padding-left: 10px;
 }
 .landing-page{
     padding-top: 70px;
@@ -111,9 +128,10 @@ a {
 
 }
 .Slogan h1 {
-    text-align: center;
+   
     color: #54318C;
 }
+
 .Slogan span{
     color: #f8f6f2;
 }
@@ -134,9 +152,31 @@ a {
     font-size: 72px;
     color: #f0f8ff;
     font-family:"VT323";
-   text-align: center;
-    padding-top: 20px;
+    text-align: center;
+    
+    padding-top: 50px;
+ /*ANIMACIJA */
+    overflow: hidden;
+    border-right: 5px solid rgb(227, 226, 225);
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing:5px; /* Adjust as needed */
+    animation: 
+     typing 3.5s steps(40, end),
+      blink-caret .3s step-end  ;
+    
+    text-align: center;
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    20% { border-color: rgb(242, 240, 237); }
+  }
+
 .glavno hr {
     border: 10px solid var(--color-smaragad-ljubicasta);
     margin-left: 10px;
@@ -145,14 +185,93 @@ a {
 }
 #osnovni-div {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    height: 500px;
-    border: 10px solid #f0f8ff ;
-    background-color: #f0f8ff;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 1300px;
+    border: 6px solid rgb(204, 219, 231) ;
+    background-color: var(--color-smaragad-ljubicasta);
     border-radius: 40px;
+   font-weight: bold;
     
   
+}
+.sadržaj{
+    display: flex;
+    padding-top: 30px;
+
+}
+.sadržaj img{
+    
+    height: 200px;
+    width: 200px;
+}
+.polja{
+    margin-top: 20px;
+   height: 350px;
+   width: 550px;
+  
+   
+}
+.polja h1{
+    color: rgb(219, 228, 235);
+    color:var(--color-pijana-žuta);
+    font-size: 35px;
+    font-family: "Chivo Mono";
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.polja p{
+
+    color: #c6c9cd;
+    font-weight: bold;
+    font-size: 22px;
+  
+    padding-left: 20px;
+}
+.zanimanja{
+    border: 10px solid green;
+    height: 600px;
+}
+.zanimanja h2{
+    color: #54318C;
+    font-family: "VT323";   
+    font-size:72px;
+}
+.katalog{   
+    
+    padding-top: 10px;
+    border: 10px solid yellow;
+    grid-column: center-start / -1;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  height: 500px;
+  overflow: auto;
+  padding-bottom: 1rem;
+  padding-right: var(--page-margin);
+}
+.kartica{
+    
+    height: 400px;
+    width:275px;
+    display: grid;
+    background-color: #d0f0ee;
+    color: #15928A;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+.kartica img {
+   
+    padding-top: 0px;
+    height: 175px;
+    margin-top: 10px;
+    display: flex;
+    
 }
