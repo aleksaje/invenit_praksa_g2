@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <title>ITVodič</title>
     <link rel="icon" href="./Materijali/duck.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body >
@@ -60,8 +62,8 @@
                       </div>
               </div>
             </div>
-           <h2>Zašto i ti u IT? </h2>
-           <div id="osnovni-div" >
+           <h2 id="animated-text-id">Zašto i ti u IT? </h2>
+           <div id="osnovni-div"  >
                 <div class="polja">
                     <h1>Visoka potražnja</h1>   
                     <div class="sadržaj">
@@ -111,21 +113,86 @@
         </section>
         <section class="zanimanja">
             <h2>Zanimanja</h2>
-            <p > Neka zanimanja o kojima svakako vrijedi razmisliti</p>
-            <div class="katalog">
-               <div class="kartica ">Softver developer</div>
-               <div class="kartica ">QA</div>
-               <div class="kartica ">AI inžinjer</div>
-               <div class="kartica ">Veb developer</div>
-               <div class="kartica ">Projekt menadžer</div>
-               <div class="kartica ">UX/UI</div>
-            </div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="kartica ">
+                        <img  src="Materijali/Bez pozadine/Software_developer-removebg-preview.png">
+                        <h3>
+                        Softver developer
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi aut quo aliquam. Illum sequi modi in harum molestiae voluptatum ullam itaque, odit numquam tempore explicabo, cumque possimus qui quaerat similique.</p>
+                    </div>
+                   <div class="kartica ">
+                    <img  src="Materijali/Bez pozadine/QA_novi-removebg-preview.png">
+                        <h3>
+                          QA 
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consAspernatur.</p>
+                    </div>
+                   <div class="kartica ">
+                    <img  src="./Materijali/Bez pozadine/Robot.png  ">
+                        <h3>
+                           AI inžinjer
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At cum id in possimus. Voluptates, maxime. Nihil excepturi possimus sapiente! Quam aut doloremque, ipsa dolores ab unde debitis molestiae repellendus deleniti?</p>
+                        
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="kartica ">
+                        <img  src="./Materijali/Bez pozadine/Web_Developer-removebg-preview.png">
+                        <h3>
+                        Veb developer
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum, autem consectetur incidunt aspernatur inventore iure, quaerat tempora optio eum placeat tempore architecto rem. Sequi tempore quam repellat quasi exercitationem.</p>
+                    </div>
+                   <div class="kartica ">
+                    <img src="./Materijali/Bez pozadine/Project_manager-removebg-preview.png">
+                    <h3>
+                        Projekt menadžer
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus porro hic laborum fugiat dicta incidunt s alias molestiae?</p>
+                    </div>
+                   <div class="kartica ">
+                    <img src="./Materijali/Bez pozadine/UX_UI-removebg-preview.png" >
+                    <h3>
+                        UX/UI
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet nt ab, eveniet ducimus error perferendis aspernatur ex modi atque dicta voluptatibus ipsa corporis, ea nesciunt dolore deserunt!
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </section>
+        <section class="O-nama">
+
         </section>
     </main>
         
-    <footer></footer>
+    <footer>
+        <div class="lijevi-footer">
+            <img src="./Materijali/logo.png">
+            <h2>Bulevar vojvode Stepe Stepanovica 171a, lokal 2<br>
+                78 000 Banja Luka<br>
+                Bosnia and Herzegovina</h2>
+        </div>
+        <div class="desni-footer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49626.37295624631!2d14.272986709994056!3d46.16558891212193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac610082a391b%3A0x47da57ce7b792895!2s4220%20%C5%A0kofja%20Loka%2C%20Slovenija!5e0!3m2!1shr!2sba!4v1709583081797!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
