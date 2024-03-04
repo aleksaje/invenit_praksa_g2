@@ -176,8 +176,69 @@ a {
     from, to { border-color: transparent }
     20% { border-color: rgb(242, 240, 237); }
   }
+/*Ovde novi div*/
+#animacija {
+    display: flex;
+    border: solid 10px var(--color-smaragad-ljubicasta);
+    border-radius: 30px;
+    height: 150px;
+}
+
+@keyframes spinTop {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-35deg);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes moveDots {
+    0% {
+        transform: translateX(100%); /* Startna pozicija, s desne strane */
+    }
+    100% {
+        transform: translateX(-100%); /* Krajnja pozicija, 100% širine prema levoj strani */
+    }
+}
+
+.dots-list{
+    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+}
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 30%;
+    margin-right: 50px;
+    right: -30px;
+    animation: moveDots 1s linear infinite, fadeIn 1s ease-out infinite; 
+}
+
+
+#animacija img{
+    width:150px;
+    
+    height: 120px;
+    padding-left: 10px;
+    animation: spinTop .5s infinite linear;
+}
 
 .glavno hr {
+    padding-top: 100px;
     border: 10px solid var(--color-smaragad-ljubicasta);
     margin-left: 10px;
     margin-right: 10px;
@@ -237,41 +298,28 @@ a {
 }
 .zanimanja{
     border: 10px solid green;
-    height: 600px;
+    height: 850px;
 }
 .zanimanja h2{
     color: #54318C;
     font-family: "VT323";   
     font-size:72px;
 }
-.katalog{   
-    
-    padding-top: 10px;
-    border: 10px solid yellow;
-    grid-column: center-start / -1;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1rem;
-  height: 500px;
-  overflow: auto;
-  padding-bottom: 1rem;
-  padding-right: var(--page-margin);
+.zanimanja p{
+    font-size: 22px;
+    color: var(--color-sunđer-žuta);
+
+}
+.katalog{
+    border: solid 10px red;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    gap:30px
 }
 .kartica{
-    
-    height: 400px;
-    width:275px;
-    display: grid;
-    background-color: #d0f0ee;
-    color: #15928A;
-    border-radius: 20px;
-    font-size: 1.5rem;
-}
-.kartica img {
-   
-    padding-top: 0px;
-    height: 175px;
-    margin-top: 10px;
-    display: flex;
-    
+    background-color: blue;
+    height: 600px;
+    width: 500px;
+    gap:20px
 }
