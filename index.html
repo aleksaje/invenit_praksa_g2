@@ -17,15 +17,15 @@
             <a href="https://invenit.io/" target="_blank"><img src="./Materijali/logo.png" alt="Slika "
                     class="logo"></a>
             <ul class="menu">
-                <li> <a href="">Početna</a></li>
-                <li> <a href="">Zašto i ti u IT</a></li>
-                <li> <a href="">Zanimanja  </a></li>
-                <li> <a href="">Iskustva</a></li>
+                <li> <a href="#Početna">Početna</a></li>
+                <li> <a href="#ZaptouIT">Zašto i ti u IT</a></li>
+                <li> <a href="#zanimanja">Zanimanja  </a></li>
+                <li> <a href="#O-nama">Iskustva</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="landing-page">  
+        <section class="landing-page" id="Početna">  
                 <div class="hero-card">
                     <div class="koda">
                         <img src="./Materijali/Koda_Koda1.png">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
         </section>
-        <section class="glavno">
+        <section class="glavno " id="ZaptouIT">
             <div id="animacija"> 
                     <img src="./Materijali/Bez pozadine/pacman.png">
                     <div class="dots-list">
@@ -69,7 +69,7 @@
                     <div class="sadržaj">
                             <img src="./Materijali/Bez pozadine/Potražnja-removebg-preview.png">
                         <div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, blanditiis. Accusamus aut pariatur deserunt suscipit cumque saepe quo, quod debitis quis nostrum quaerat ut ipsam deleniti quae praesentium quisquam iure!(100)</p>
+                            <p>Razvojem modernih tehnologija i invoacija potražnja za zanimanjima u IT struci eksponencinalno raste. Budućnost na ovim pozicijama Vam je zagarantovana i sigurna . </p>
                         </div>
                     </div>
                     
@@ -78,40 +78,40 @@
                         <h1>Napredovanje</h1>
                         <div class="sadržaj">
                             <img src="./Materijali/Bez pozadine/Napredovanje-removebg-preview.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, Lorem ipsum dolor </p>
+                        <p>Velika dinamičnost ovoga am pruža velike mogućnosti napredovanja i stručnog usavrašavanja. </p>
                     </div>
                 </div>
                 <div class="polja">
                    <h1>Inovacije i kreativnost</h1>
                    <div class="sadržaj">
                         <img src="./Materijali/Bez pozadine/Kreativnost-removebg-preview.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, blanditiis. Accusamus aut pariatur deserunt </p>
+                        <p>Kreativnost i inovativna rješenja su svakako ovde veoma poželjni </p>
                     </div>
                 </div>
                 <div class="polja">
                     <h1>Zapošljavanje</h1>
                     <div class="sadržaj">
                         <img src="./Materijali/Bez pozadine/Zapošljavanje-removebg-preview.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, blanditiis. Accusamus aut pariatur deserunt suscipit cumque saepe quo, quod debitis quis nostrum quaerat ut ipsam deleniti quae praesentium quisquam iure!(100)</p>
+                        <p>Zbog velike visoke potražnje za ovakvim zanimanjima problema sa zapošljavanjem ne predstavlja problem.</p>
                     </div>
                 </div>
                 <div class="polja">
                    <h1>Visoke plate</h1>
                    <div class="sadržaj">
                         <img src="./Materijali/Bez pozadine/Finansije-removebg-preview.png">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, blanditiis. Accusamus aut pariatur deserunt suscipit cumque saepe quo, quod debitis quis nostrum quaerat ut ipsam deleniti quae praesentium quisquam iure!(100)</p>
+                        <p>Vaš rad nikako neće biti okićen velikodušnim finansijskim primanjima. U zavisnosti od Vašeg iskustva i oblasti specijalizaije ovo može da varira </p>
                     </div>
                 </div>
                 <div class="polja">
                     <h1>Fleksibilnost</h1>
                     <div class="sadržaj">
                         <img src="./Materijali/Bez pozadine/Fleksibilnost-removebg-preview.png">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. , eveniet perspiciatis? Rerum, labore fuga?quisquam iure!(100)</p>
+                    <p>Putovati po svijetu dok radiš online svakako zvuči primamljivo</p>
                     </div>
                 </div>
            </div>
         </section>
-        <section class="zanimanja">
+        <section class="zanimanja" id="zanimanja">
             <h2>Zanimanja</h2>
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -174,55 +174,63 @@
               
               </div>
         </section>
-        <section class="O-nama">
-    <!-- Define the slideshow container -->
-    <div id="slideshow">
-        <div class="slide-wrapper">
-             
-            <!-- Define each of the slides
-         and write the content -->
-            <div class="slide">
-                <h1 class="slide-number">
-                    Mirko
-                </h1> 
+        <section class="O-nama" id="O-nama">
+            <h1 id="Iskustva">Iskustva</h1>
+            <div class="slider">
+                <input type="radio" name="slide_switch" id="id1"/>
+                <label for="id1">
+                    <img src="./Materijali/tumbnail/Mirko tab.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/Mirko tab.png"/>
+                
+                <!--Lets show the second image by default on page load-->
+                <input type="radio" name="slide_switch" id="id2" checked="checked"/>
+                <label for="id2">
+                    <img src="./Materijali/tumbnail/maja1.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/maja1.png"/>
+                
+                <input type="radio" name="slide_switch" id="id3"/>
+                <label for="id3">
+                    <img src="./Materijali/tumbnail/marko.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/marko.png"/>
+                
+                <input type="radio" name="slide_switch" id="id4"/>
+                <label for="id4">
+                    <img src="./Materijali/tumbnail/Kiki.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/Kiki.png"/>
+                
+                <input type="radio" name="slide_switch" id="id5"/>
+                <label for="id5">
+                    <img src="./Materijali/tumbnail/andrej1.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/andrej1.png"/>
+                
+                <input type="radio" name="slide_switch" id="id6"/>
+                <label for="id6">
+                    <img src="./Materijali/tumbnail/Lana.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/Lana.png"/>
+                
+                <input type="radio" name="slide_switch" id="id7"/>
+                <label for="id7">
+                    <img src="./Materijali/tumbnail/[[.png" width="100"/>
+                </label>
+                <img src="./Materijali/tumbnail/[[.png"/>
+
+               
+
             </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Maja
-                </h1> 
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Marko
-                </h1> 
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Andrej
-                </h1> 
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Lana
-                </h1> 
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Kristijan
-                </h1> 
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Aleksa
-                </h1> 
-            </div>
-        </div>
-    </div>  
-    </div>
-           
+            
+            <!-- We will use PrefixFree - a script that takes care of CSS3 vendor prefixes
+            You can download it from http://leaverou.github.com/prefixfree/ -->
+            <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
             
         </section>
         <section id="razak">
+            
         </section>
     </main>
         
