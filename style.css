@@ -374,6 +374,9 @@ a {
 .O-nama{
 
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 10px;
 }
 #Iskustva{
@@ -384,8 +387,8 @@ a {
 /*ANIMACIJA*/
 
 .slider{
+    
     padding-top: 10px;
-   margin-right: 25%;
     background: rgb(84,49,140);
     background: linear-gradient(180deg, rgba(84,49,140,1) 7%, rgba(114,77,173,1) 33%, rgba(152,113,215,1) 52%, rgba(181,147,198,1) 72%, rgba(204,175,184,1) 83%, rgba(255,235,153,1) 100%);
     border-radius: 25px;	
@@ -470,9 +473,7 @@ On click the images will be displayed at normal size to complete the effect
 }
 .footer{
     font-family: 'Courier New', Courier, monospace;
-	background-color: #24262b;
-    /* padding: 70px 0; */
-    
+	background-color: #24262b;  
 }
 .footer-col{
 
